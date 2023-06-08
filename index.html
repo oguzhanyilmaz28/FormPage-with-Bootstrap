@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .header {
+        min-height: 200px;
+        background-color: #E9ECEF;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div>
+      <div
+        class="header d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="fs-1">Beyaz Şapkalı</div>
+        <div>
+          Beyaz şapkalı hacker olma kursumuzda katılmak için aşağıdaki
+          programlardan birini şeçin ve formu doldurun.
+        </div>
+      </div>
+
+      <div
+        class="p-2 d-flex justify-content-around align-items-center"
+        style="background-color: black; min-height: 250px "
+      >
+        <div
+
+          style="max-width: 235px; min-height: 225px; color: white; background-color: #17A2B8;"
+        >
+          <div class="p-2 text-center fs-4">Başlangıç</div>
+          <div class="border-top border-bottom border-dark p-2">
+            <div class="text-center fs-5">Yeni Başlayanlar</div>
+            <div>
+              Bilgisayar dünyası hakkında biraz bilginiz var ve hacker olmak
+              istiyorsanız size uygun kurs.
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="form-check pt-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Seç
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="max-width: 235px; min-height: 225px; color: white; background-color: #D53343;"
+        >
+          <div class="p-2 text-center fs-4">Orta</div>
+          <div class="border-top border-bottom border-dark p-2">
+            <div class="text-center fs-5">İlerletmek İsteyenler</div>
+            <div>
+              Bilgisayar dünyası hakkında biraz bilginiz var ve hacker olmak
+              istiyorsanız size uygun kurs.
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="form-check pt-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="1"
+                checked
+              />
+              <label class="form-check-label" for="1"> Seç </label>
+            </div>
+          </div>
+        </div>
+        <div
+          style="max-width: 235px; min-height: 225px; color: white; background-color:#32383E;"
+        >
+          <div class="p-2 text-center fs-4">İleri</div>
+          <div class="border-top border-bottom border-dark p-2">
+            <div class="text-center fs-5">Uzmanlaşmak İsteyenler</div>
+            <div>
+              Bilgisayar dünyası hakkında biraz bilginiz var ve hacker olmak
+              istiyorsanız size uygun kurs.
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="form-check pt-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="sec1"
+                checked
+              />
+              <label class="form-check-label" for="sec1"> Seç </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form border rounded" style="background-color: white">
+        <div
+          class="p-3 fs-5 border-bottom"
+          style="min-height: 50px; background-color: #e9ecef"
+        >
+          Kişisel Bilgiler
+        </div>
+        <form class="p-3">
+          <div class="d-flex">
+            <div class="input-group mb-3 me-2">
+              <input type="text" class="form-control" placeholder="Adınız" />
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Soyadınız" />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              id="floatingTextarea2"
+              style="height: 100px"
+              placeholder="Adres Bilgileri"
+            ></textarea>
+          </div>
+
+          <div class="d-flex">
+            <div class="input-group mb-3 me-2">
+              <span class="input-group-text">@</span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="kullanici_adi"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="eposta" />
+              <span class="input-group-text" id="basic-addon2"
+                >@netbus.com</span
+              >
+            </div>
+          </div>
+
+          <select class="form-select mb-3">
+            <option selected>Eğitim</option>
+            <option value="1">Yüksek Lisans</option>
+            <option value="2">Lisans</option>
+            <option value="3">Ön Lisans</option>
+          </select>
+
+          <button type="button" style="width: 100%;  background-color:#DC3545; color: white;">
+            Gönder 
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
